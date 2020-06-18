@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CLOCK</title>
+	</head>
+	<body>
+		<form method="post" action="startclock.php">
+			<p>Bitte geben Sie eine Uhrzeit für das Ende des Timers an!<br />
+			Aktivieren Sie optional den Rainbow-Modus, den Blink-Modus für die letzte Minute,<br />
+			oder den auffälligen Blink-Modus für die letzten 2 Minuten!</p>
+				<input type="radio" name="mode" value="none" checked="checked">Normal</input><br />
+				<input type="radio" name="mode" value="rainbow">Rainbow-Modus</input><br />
+				<input type="radio" name="mode" value="truerainbow">TRUE Rainbow-Modus</input><br />
+				<input type="radio" name="mode" value="blinklow">Blink-Modus (letzte Minute)</input><br />
+				<input type="radio" name="mode" value="blink">Auffälliger Blink-Modus (letzte 2 Minuten)</input><br />
+			<br />
+			<input type="time" name="uhrzeit" value="09:15" />
+			<input type="submit" value="Timer starten" />
+		</form>
+	</body>
+</html>
