@@ -1,11 +1,10 @@
+<?php session_start(); ?>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<?php 	
-			session_start();
-			
+		<?php			
 			if (!isset($_SESSION['uhrzeit'])) {
-				header('Location: clock.html');
+				echo('<script>document.location.href = "index.html"</script>');
 			}
 			
 			$day = date("d", time());
